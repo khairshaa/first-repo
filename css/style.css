@@ -1,0 +1,178 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f0f0; /* Soft background */
+    background-image: url('https://id.pinterest.com/pin/1126744400535687407/images/gingham-pattern.png'); /* Gingham or stripe pattern */
+    background-repeat: repeat;
+    color: #333;
+    /* Dimension: Setting max-width for content to be centered */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    /* Positioning: Relative positioning for body if child elements use absolute */
+    position: relative;
+}
+
+header {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ffdde2;
+    background-color: #fff;
+    /* Text and Font */
+    font-family: 'Pacifico', cursive;
+    color: #8B4513;
+    font-size: 1.2em;
+    /* Dimension */
+    width: 100%;
+    /* Positioning: Display flex for alignment (simple layout) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #ffdde2; /* Pastel pink for nav */
+    border-radius: 15px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    /* Positioning: Display flex for horizontal navigation */
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    /* Dimension */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8B4513;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    /* Text and Font */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    background-color: #ffd7e0; /* Lighter pink on hover */
+    color: #fff;
+}
+
+.container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* Dimension */
+    min-height: 500px;
+}
+
+.start-button {
+    display: inline-block;
+    background-color: #ff99aa; /* Bright pink button */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px; /* More rounded, "blob" like */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease;
+    border: 3px solid #e07a8a; /* Border for depth */
+    /* Positioning: Inline-block for button-like behavior */
+    display: inline-block;
+}
+
+.start-button:hover {
+    background-color: #e07a8a;
+    border-color: #c75c6c;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #fefefe;
+    border: 1px solid #ffe8ed;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    /* Dimension */
+    width: 30%; /* Adjust for responsiveness if needed */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    /* Positioning: Display block by default, inline-block if needed for tighter control */
+    display: block;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* Dimension */
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Ensures images fit without distortion */
+}
+
+.product-item h3 {
+    color: #6a3b2b;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.4em;
+    margin: 10px 0 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #ffccdd; /* Soft pink footer */
+    color: #6a3b2b;
+    border-radius: 15px;
+    /* Positioning: Absolute or fixed if needed, but relative is simple */
+    position: relative;
+    bottom: 0;
+    width: calc(100% - 40px); /* Adjust for body padding */
+}
+
+/* More specific styles for forms, tables, lists will go here */
+/* For example, for a form input (on order.html) */
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group textarea,
+.form-group select {
+    width: calc(100% - 20px); /* Dimension */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffb3c1;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff9fa;
+    color: #333;
+}
+
+/* Background property example for a specific section via external CSS */
+.about-card {
+    background-color: #e6f7ff; /* Light blue accent */
+    padding: 25px;
+    border-radius: 18px;
+    margin: 20px 0;
+    /* Text and Font property: Specific font size */
+    font-size: 0.95em;
+    line-height: 1.6;
+}
